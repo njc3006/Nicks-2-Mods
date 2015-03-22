@@ -1,0 +1,64 @@
+package nick2.moreCrafts;
+
+import net.minecraft.init.Blocks;
+import net.minecraft.init.Items;
+import net.minecraft.item.ItemStack;
+import net.minecraftforge.fml.common.Mod;
+import net.minecraftforge.fml.common.Mod.EventHandler;
+import net.minecraftforge.fml.common.event.FMLInitializationEvent;
+import net.minecraftforge.fml.common.registry.GameRegistry; 
+
+@Mod(modid = Craftable.MODID, version = Craftable.VERSION, name = "Craftable")
+public class Craftable {
+
+	public static final String MODID = "craftable";
+    public static final String VERSION = "1.0";
+    
+    @EventHandler
+    public void init(FMLInitializationEvent event)
+    {
+        System.out.println("Starting Craftable Mod");
+        addRecipes();
+    }
+	
+    public void addRecipes(){
+    	
+    	addSaddle();	
+    	addNameTag();
+    	addDisks();
+	}
+    
+    
+    //Adds recipe for saddle
+    public void addSaddle(){
+		GameRegistry.addRecipe(new ItemStack(Items.saddle, 1),
+				"LLL",
+				"LSL",
+				"LIL",
+				'L', Items.leather,
+				'S', Items.string,
+				'I', Items.iron_ingot);
+	    		    
+    }
+    
+    //Adds recipes for name tag
+    public void addNameTag(){
+  		GameRegistry.addRecipe(new ItemStack(Items.name_tag, 4),
+	  			"SIS",
+	  			'I', Items.sign,
+	  			'S', Items.string);
+  	
+    }
+
+    //Adds recipes for disks
+    public void addDisks(){
+    	
+    	GameRegistry.addRecipe(new ItemStack(Items.record_13, 1),
+	  			"CCC",
+	  			"CDC",
+	  			"CCC",
+	  			'C', Items.coal,
+	  			'D', new ItemStack(Items.dye, 1, 11));
+    	
+    }
+}
