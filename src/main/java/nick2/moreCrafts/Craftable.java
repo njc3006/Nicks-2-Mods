@@ -276,5 +276,11 @@ public class Craftable {
 				'D', Items.diamond);
 	    		    
     }
+    //Adds recipes for turning wool into string
+    public void addString(){
+    	GameRegistry.addRecipe(new ItemStack(Items.string, 1),
+				"W",
+				'W', Items.wool);
+    }
     
 }
