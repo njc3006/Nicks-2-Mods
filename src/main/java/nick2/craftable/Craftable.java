@@ -32,6 +32,7 @@ public class Craftable {
     	addChainmail();
     	addSlime();
     	addHorseArmors();
+    	addString();
 	}
     
     
@@ -278,9 +279,9 @@ public class Craftable {
     }
     //Adds recipes for turning wool into string
     public void addString(){
-    	GameRegistry.addRecipe(new ItemStack(Items.string, 1),
+    	GameRegistry.addRecipe(new ItemStack(Items.string, 4),
 				"W",
-				'W', Items.wool);
+				'W', Blocks.wool);
     }
     
 }
