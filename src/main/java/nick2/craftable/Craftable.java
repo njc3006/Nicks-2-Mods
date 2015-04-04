@@ -1,4 +1,4 @@
-package nick2.moreCrafts;
+package nick2.craftable;
 
 import net.minecraft.init.Blocks;
 import net.minecraft.init.Items;
