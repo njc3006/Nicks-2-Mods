@@ -32,10 +32,11 @@ public class Craftable {
     	addSlime();
     	addHorseArmors();
     	addString();
+    	addFlint();
 	}
     
-    
-    //Adds recipe for saddle
+
+	//Adds recipe for saddle
     public void addSaddle(){
 		GameRegistry.addRecipe(new ItemStack(Items.saddle, 1),
 				"LLL",
@@ -206,6 +207,12 @@ public class Craftable {
 	  			"CCC",
 	  			'D', Blocks.dirt,
 	  			'C', Blocks.cobblestone);
+    	GameRegistry.addRecipe(new ItemStack(Blocks.gravel, 32),
+	  			"CDC",
+	  			"CDC",
+	  			"CDC",
+	  			'D', Blocks.dirt,
+	  			'C', Blocks.cobblestone);
     	
     	}
     
@@ -282,5 +289,12 @@ public class Craftable {
 				"W",
 				'W', Blocks.wool);
     }
+    
+    //Adds Recipe for flint
+    private void addFlint() {
+    	GameRegistry.addRecipe(new ItemStack(Items.flint, 8),
+				"G",
+				'G', Blocks.gravel);
+	}
     
 }//end Craftable

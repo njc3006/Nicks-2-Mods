@@ -1,0 +1,16 @@
+[
+{
+  "modid": "BetterAnvils",
+  "name": "Better Anvils",
+  "description": "Makes Anvils better by removing xp costs from many repair jobs.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Nick Boa"," Nick Coriale"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]

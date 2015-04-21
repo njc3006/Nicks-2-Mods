@@ -1,0 +1,16 @@
+[
+{
+  "modid": "Craftable",
+  "name": "Craftable",
+  "description": "Makes many uncraftable items craftable.",
+  "version": "${version}",
+  "mcversion": "${mcversion}",
+  "url": "",
+  "updateUrl": "",
+  "authorList": ["Nick Boa","Nick Coriale"],
+  "credits": "",
+  "logoFile": "",
+  "screenshots": [],
+  "dependencies": []
+}
+]
