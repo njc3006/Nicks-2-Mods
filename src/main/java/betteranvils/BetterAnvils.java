@@ -32,7 +32,7 @@ public class BetterAnvils extends ContainerRepair{
 	}
     
     public void init(FMLInitializationEvent event){
-        //System.out.println("Starting Better Anvils Mod");
+        System.out.println("Starting Better Anvils Mod");
         makeChanges();
     }
 	
